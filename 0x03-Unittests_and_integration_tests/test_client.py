@@ -34,7 +34,7 @@ class TestGithubOrgClient(unittest.TestCase):
     def test_org(self, org: str, expected_response: Dict,
                  mocked_function: MagicMock) -> None:
         """
-        Test that GithubOrgClient.org returns the correct value.                
+        Test that GithubOrgClient.org returns the correct value.
         """
         mocked_function.return_value = MagicMock(
             return_value=expected_response)
